@@ -1,29 +1,30 @@
 {
-    "$id": "${{siteId}}",
-    "$schema": "https://schema.yext.com/config/pages/yextsite-config/v1",
-    "siteName": "${{siteName}}",
-    "repoConfig": "${{repoId}}",
-    "domainConfig": "${{domainName}}",
-    "siteSettings": {
-      "autoDeploy": true,
-      "autoStage": true,
-      "autoPublish": true,
-      "pullRequestsEnabled": false,
-      "stagingCredentials": {
-        "password": "",
-        "username": ""
-      }
-    },
-    "branches": [
-      {
-        "name": "main",
-        "isProductionBranch": true,
-        "envVars": [
-          {
-            "key": "YEXT_PUBLIC_ENTITY_ID",
-            "value": "${{placeId}}"
-          }
-        ]
-      }
-    ]
-  }
+  "$id": "${{siteId}}",
+  "$schema": "https://schema.yext.com/config/pages/yextsite-config/v1",
+  "siteName": "${{siteName}}",
+  "repoConfig": "${{repoId}}",
+  "domainConfig": "${{domainName}}",
+  "siteSettings": {
+    "autoDeploy": true,
+    "autoStage": true,
+    "autoPublish": true,
+    "shareBuild": true,
+    "pullRequestsEnabled": false,
+    "stagingCredentials": {
+      "password": "",
+      "username": ""
+    }
+  },
+  "branches": [
+    {
+      "name": "main",
+      "isProductionBranch": true,
+      "envVars": [
+        {
+          "key": "YEXT_PUBLIC_ENTITY_ID",
+          "value": "${{placeId}}"
+        }
+      ]
+    }
+  ]
+}
