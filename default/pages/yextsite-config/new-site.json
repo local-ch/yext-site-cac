@@ -8,6 +8,7 @@
     "autoDeploy": true,
     "autoStage": true,
     "autoPublish": true,
+    "shareBuild": true,
     "pullRequestsEnabled": false,
     "stagingCredentials": {
       "password": "",
